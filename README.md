@@ -4,7 +4,7 @@ This project is a web application template with authentication features, using N
 
 ## Key Features
 
-- **Next.js 14**: Utilizing the latest React framework
+- **Next.js 14(App Router)**: Utilizing the latest React framework
 - **Auth.js**: Easy implementation of a secure authentication system
 - **Prisma**: Efficient database operations with a type-safe ORM
 - **PostgreSQL**: Reliable relational database
@@ -21,19 +21,22 @@ This project is a web application template with authentication features, using N
    cd next-authjs-template
    ```
 
-   or
-   Create a new repository using this template on GitHub.
+   or using GitHub CLI
+
+   ```bash
+   gh repo create <your-repo-name> --template https://github.com/caru-ini/next-authjs-template --clone
+   ```
 
 2. Install dependencies:
 
    ```bash
-   pnpm install
+   pnpm i
    ```
 
 3. Generate auth.js secret
 
    ```bash
-   pnpm dlx authjs@latest secret
+   pnpm dlx auth@latest secret
    ```
 
 4. Set up environment variables:
@@ -56,7 +59,7 @@ This project is a web application template with authentication features, using N
 6. Run Prisma migrations:
 
    ```bash
-   pnpm run prisma:migrate
+   pnpm prisma:migrate
    ```
 
 7. Start the development server:
