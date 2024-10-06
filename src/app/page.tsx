@@ -1,7 +1,8 @@
+import { SignInButton } from "@/components/auth/signin-button";
 import { SignOutButton } from "@/components/auth/signout-button";
 import { Button } from "@/components/ui/button";
 import { auth } from "@/lib/auth";
-import { ArrowRight, LogOut } from "lucide-react";
+import { ArrowRight, LogIn, LogOut } from "lucide-react";
 import Link from "next/link";
 
 export default async function Home() {
@@ -23,10 +24,17 @@ export default async function Home() {
               <ArrowRight size={16} />
             </Button>
           </Link>
-          <SignOutButton className="gap-2">
-            <LogOut size={16} />
-            Sign Out
-          </SignOutButton>
+          {session ? (
+            <SignOutButton className="gap-2">
+              <LogOut size={16} />
+              Sign Out
+            </SignOutButton>
+          ) : (
+            <SignInButton className="gap-2">
+              <LogIn size={16} />
+              Sign In
+            </SignInButton>
+          )}
         </div>
       </div>
       <div className="flex flex-col gap-2 max-w-xl">
