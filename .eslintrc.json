@@ -1,3 +1,13 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript", "plugin:tailwindcss/recommended"],
+  "plugins": ["prettier"],
+  "rules":{
+    "prettier/prettier": "error",
+    "tailwindcss/classnames-order": [
+      "warn",
+      {
+        "callees": ["clsx", "cn", "twMerge"]
+      }
+    ]
+  }
 }
