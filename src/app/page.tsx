@@ -8,8 +8,8 @@ import Link from "next/link";
 export default async function Home() {
   const session = await auth();
   return (
-    <div className="flex flex-col flex-1 justify-center items-center">
-      <div className="flex flex-col gap-2 justify-center items-center">
+    <div className="flex flex-1 flex-col items-center justify-center ">
+      <div className="flex flex-col items-center justify-center gap-2">
         <h1 className="text-2xl font-bold">Home</h1>
         <p className="text-sm text-muted-foreground">Start modifying this page to get started.</p>
         <div className="flex gap-2">
@@ -37,9 +37,9 @@ export default async function Home() {
           )}
         </div>
       </div>
-      <div className="flex flex-col gap-2 max-w-xl">
+      <div className="flex max-w-xl flex-col gap-2">
         <p className="font-bold">Session:</p>
-        <pre className="text-sm bg-secondary p-4 rounded-md overflow-x-auto">
+        <pre className="overflow-x-auto rounded-md bg-secondary p-4 text-sm">
           {JSON.stringify(session, null, 2)}
         </pre>
       </div>

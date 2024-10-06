@@ -15,8 +15,8 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <SessionProvider>
-        <body className={`flex flex-col min-h-svh`}>
-          <main className="flex flex-col flex-1">{children}</main>
+        <body className="flex min-h-svh flex-col">
+          <main className="flex flex-1 flex-col">{children}</main>
         </body>
       </SessionProvider>
     </html>

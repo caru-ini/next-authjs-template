@@ -1,7 +1,7 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript", "plugin:tailwindcss/recommended"],
+  "extends": ["next/core-web-vitals", "plugin:tailwindcss/recommended"],
   "plugins": ["prettier"],
-  "rules":{
+  "rules": {
     "prettier/prettier": "error",
     "tailwindcss/classnames-order": [
       "warn",
