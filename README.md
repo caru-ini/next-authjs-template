@@ -16,9 +16,10 @@ This project is a web application template with authentication features, using N
 
 1. Clone the repository
 
+   With create-next-app
+
    ```bash
-   git clone https://github.com/your-username/next-authjs-template.git
-   cd next-authjs-template
+   pnpm create next-app -e https://github.com/caru-ini/next-authjs-template
    ```
 
    or using GitHub CLI
@@ -87,3 +88,7 @@ This project is released under the MIT License. See the [LICENSE](LICENSE) file 
 ## Support
 
 If you have any questions or need assistance, please open an issue or contact the project maintainer directly.
+
+## Star Us!
+
+If you find this project useful, we'd greatly appreciate it if you could star our GitHub repository. Your support is a huge encouragement for us to continue improving and maintaining this project.
