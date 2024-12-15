@@ -4,13 +4,14 @@ This project is a web application template with authentication features, using N
 
 ## Key Features
 
-- **Next.js 14(App Router)**: Utilizing the latest React framework
+- **Next.js 15(App Router)**: Utilizing the latest React framework
+- **ESLint 9**: Latest version of ESLint (flat config)
 - **Auth.js**: Easy implementation of a secure authentication system
+- **Tailwind CSS**: Customizable utility-first CSS framework
+- **shadcn/ui**: Functional UI components
 - **Prisma**: Efficient database operations with a type-safe ORM
 - **PostgreSQL**: Reliable relational database
-- **Tailwind CSS**: Customizable utility-first CSS framework
-- **shadcn/ui**: Reusable UI components
-- **Docker**: Simple development environment setup
+- **Docker**: Database containerization for local development
 
 ## Setup Instructions
 
@@ -69,7 +70,11 @@ This project is a web application template with authentication features, using N
    pnpm dev
    ```
 
-8. Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+## Deployment
+
+Recommend [Vercel](https://vercel.com/) or [Coolify](https://coolify.io/) for deployment.
+
+On coolify (or other self-hosted deployment platforms), you should set `AUTH_TRUST_HOST=true` in environment variables.
 
 ## Technologies Used
 
