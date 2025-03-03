@@ -1,17 +1,23 @@
 {
   "name": "next-authjs-template",
   "version": "0.1.0",
-  "private": true,
+  "private": true,  
   "scripts": {
+    "build": "next build",
+    "check": "next lint && tsc --noEmit",
+    "db:generate": "dotenv -e .env.local -- prisma migrate dev",
+    "db:migrate": "dotenv -e .env.local -- prisma migrate deploy",
+    "db:push": "dotenv -e .env.local -- prisma db push",
+    "db:studio": "dotenv -e .env.local -- prisma studio",
     "dev": "next dev --turbo",
-    "build": "prisma migrate deploy && prisma generate && next build",
-    "start": "next start",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,mdx}\" --cache",
+    "format:write": "prettier --write \"**/*.{ts,tsx,js,jsx,mdx}\" --cache",
+    "postinstall": "prisma generate",
     "lint": "next lint",
-    "format": "prettier --write . && eslint --fix .",
-    "typecheck": "tsc --noEmit",
-    "prisma:migrate": "dotenv -e .env.local -- prisma migrate dev --name ''",
-    "prisma:studio": "dotenv -e .env.local -- prisma studio",
-    "shadcn": "npx shadcn@latest add"
+    "lint:fix": "next lint --fix",
+    "preview": "next build && next start",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.7.4",
