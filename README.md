@@ -12,6 +12,7 @@ This project is a web application template with authentication features, using N
 - **Prisma**: Efficient database operations with a type-safe ORM
 - **PostgreSQL**: Reliable relational database
 - **Docker**: Database containerization for local development
+- **T3 Env**: Type-safe environment variables with validation
 
 ## Setup Instructions
 
@@ -85,6 +86,7 @@ On coolify (or other self-hosted deployment platforms), you should set `AUTH_TRU
 - [Tailwind CSS](https://tailwindcss.com/)
 - [shadcn/ui](https://ui.shadcn.com/)
 - [Docker](https://www.docker.com/)
+- [T3 Env](https://github.com/t3-oss/t3-env)
 
 ## License
 
