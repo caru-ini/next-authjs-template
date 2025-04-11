@@ -1,12 +1,12 @@
 # Next.js Auth.js Template
 
-This project is a web application template with authentication features, using Next.js 14 and Auth.js. It incorporates modern web development best practices, enabling rapid development initiation.
+This project is a web application template with authentication features, using Next.js 15 and Auth.js. It incorporates modern web development best practices, enabling rapid development initiation.
 
 ## Key Features
 
 - **Next.js 15(App Router)**: Utilizing the latest React framework
 - **ESLint 9**: Latest version of ESLint (flat config)
-- **Auth.js**: Easy implementation of a secure authentication system
+- **Auth.js(Next-Auth v5)**: Easy implementation of a secure authentication system
 - **Tailwind CSS**: Customizable utility-first CSS framework
 - **shadcn/ui**: Functional UI components
 - **Prisma**: Efficient database operations with a type-safe ORM
