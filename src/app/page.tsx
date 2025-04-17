@@ -37,10 +37,10 @@ export default async function Home() {
             </SignInButton>
           )}
         </div>
-        <div className="flex max-w-xl flex-col gap-2">
-          <p className="font-bold">Session:</p>
-          <pre className="overflow-x-auto rounded-md bg-secondary p-4 text-sm">
-            {JSON.stringify(session, null, 2)}
+        <div className="flex max-w-xl flex-col">
+          <p className="max-w-sm rounded-t-md bg-secondary/50 p-2 font-bold">Session</p>
+          <pre className="min-w-[300px] overflow-x-auto rounded-md rounded-t-none bg-secondary p-4 text-sm">
+            {session ? JSON.stringify(session, null, 2) : "No session"}
           </pre>
         </div>
         <div className="flex flex-col items-center justify-center gap-2 rounded-md bg-secondary/50 p-4">
