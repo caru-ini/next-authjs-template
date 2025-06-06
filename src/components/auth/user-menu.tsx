@@ -30,13 +30,9 @@ export const UserMenu = () => {
           <AvatarFallback>{user?.name?.charAt(0) ?? ""}</AvatarFallback>
         </Avatar>
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
+      <DropdownMenuContent className="w-48">
         <DropdownMenuItem>
           <Link href="#" className="flex items-center gap-2">
-            <Avatar className="select-none">
-              <AvatarImage draggable={false} src={user?.image ?? ""} />
-              <AvatarFallback>{user?.name?.charAt(0) ?? ""}</AvatarFallback>
-            </Avatar>
             <div className="flex flex-col">
               <p className="text-sm font-bold">{user?.name ?? "Not Signed In"}</p>
               <p className="text-xs text-muted-foreground">
