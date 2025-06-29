@@ -99,3 +99,21 @@ If you have any questions or need assistance, please open an issue or contact th
 ## Star Us!
 
 If you find this project useful, we'd greatly appreciate it if you could star our GitHub repository. Your support is a huge encouragement for us to continue improving and maintaining this project.
+
+---
+
+## Want more advanced features?
+
+Want to use `better-auth` instead of `auth.js` or more advanced features? Check out our **Enhanced Fullstack Template**!
+
+### Key Improvements
+
+- 🔐 **Better Auth** - More flexible and modern authentication system
+- 🔥 **Hono + Hono RPC** - Type-safe API routes with Hono framework and Hono RPC client
+- 🍃 **Tailwind CSS 4** - Latest version with enhanced features
+- ⚛️ **React 19** - Latest React with improved performance
+- 📦 **AWS S3 Integration** - Ready-to-use file upload functionality
+- 🔧 **Enhanced DX** - Pre-commit hooks, better linting.
+- 💡 **AI-ready** - Pre-configured AI-ready configuration for Cursor(AI IDE).
+
+**👀Check the repository**: [caru-ini/fullstack-template](https://github.com/caru-ini/fullstack-template)
