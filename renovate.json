@@ -1,27 +1,24 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:base",
+    ":disableDependencyDashboard"
   ],
   "packageRules": [
     {
-      "description": "Disable automerge for all updates by default",
-      "matchUpdateTypes": ["major", "minor", "patch", "pin", "digest"],
+      "description": "Disable automerge for major updates",
+      "matchUpdateTypes": ["major"],
       "automerge": false
     },
     {
-      "description": "Automerge vulnerability alerts (security patches)",
-      "vulnerabilityAlerts": true,
-      "automerge": true,
-      "labels": ["security"]
-    },
-    {
-      "description": "Automerge minor updates",
-      "matchUpdateTypes": ["minor"],
+      "description": "Automerge minor and patch updates",
+      "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
     }
   ],
   "vulnerabilityAlerts": {
-    "enabled": true
+    "enabled": true,
+    "automerge": true,
+    "addLabels": ["security"]
   }
 }
