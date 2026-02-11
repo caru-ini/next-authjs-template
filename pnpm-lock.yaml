@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@auth/prisma-adapter':
         specifier: ^2.8.0
-        version: 2.8.0(@prisma/client@5.22.0(prisma@5.22.0))
+        version: 2.11.1(@prisma/client@5.22.0(prisma@5.22.0))
       '@prisma/client':
         specifier: ^5.22.0
         version: 5.22.0(prisma@5.22.0)
@@ -112,20 +112,6 @@ packages:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
 
-  '@auth/core@0.38.0':
-    resolution: {integrity: sha512-ClHl44x4cY3wfJmHLpW+XrYqED0fZIzbHmwbExltzroCjR5ts3DLTWzADRba8mJFYZ8JIEJDa+lXnGl0E9Bl7Q==}
-    peerDependencies:
-      '@simplewebauthn/browser': ^9.0.1
-      '@simplewebauthn/server': ^9.0.2
-      nodemailer: ^6.8.0
-    peerDependenciesMeta:
-      '@simplewebauthn/browser':
-        optional: true
-      '@simplewebauthn/server':
-        optional: true
-      nodemailer:
-        optional: true
-
   '@auth/core@0.41.0':
     resolution: {integrity: sha512-Wd7mHPQ/8zy6Qj7f4T46vg3aoor8fskJm6g2Zyj064oQ3+p0xNZXAV60ww0hY+MbTesfu29kK14Zk5d5JTazXQ==}
     peerDependencies:
@@ -140,8 +126,22 @@ packages:
       nodemailer:
         optional: true
 
-  '@auth/prisma-adapter@2.8.0':
-    resolution: {integrity: sha512-g0Bmq3l5xUDyBBiDgm/y3Zqb582CnRHzFqbloV7scrLia5AbVC0xy+ntn+CQCAWW9ibpwiqJrQKKboIWN1oGqw==}
+  '@auth/core@0.41.1':
+    resolution: {integrity: sha512-t9cJ2zNYAdWMacGRMT6+r4xr1uybIdmYa49calBPeTqwgAFPV/88ac9TEvCR85pvATiSPt8VaNf+Gt24JIT/uw==}
+    peerDependencies:
+      '@simplewebauthn/browser': ^9.0.1
+      '@simplewebauthn/server': ^9.0.2
+      nodemailer: ^7.0.7
+    peerDependenciesMeta:
+      '@simplewebauthn/browser':
+        optional: true
+      '@simplewebauthn/server':
+        optional: true
+      nodemailer:
+        optional: true
+
+  '@auth/prisma-adapter@2.11.1':
+    resolution: {integrity: sha512-Ke7DXP0Fy0Mlmjz/ZJLXwQash2UkA4621xCM0rMtEczr1kppLc/njCbUkHkIQ/PnmILjqSPEKeTjDPsYruvkug==}
     peerDependencies:
       '@prisma/client': '>=2.26.0 || >=3 || >=4 || >=5 || >=6'
 
@@ -1754,6 +1754,9 @@ packages:
   jose@6.0.10:
     resolution: {integrity: sha512-skIAxZqcMkOrSwjJvplIPYrlXGpxTPnro2/QWTDCxAdWQrSTV5/KqspMWmi5WAx5+ULswASJiZ0a+1B/Lxt9cw==}
 
+  jose@6.1.3:
+    resolution: {integrity: sha512-0TpaTfihd4QMNwrz/ob2Bp7X04yuxJkjRGi4aKmOqwhov54i6u79oCv7T+C7lo70MKH6BesI3vscD1yb/yzKXQ==}
+
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
@@ -1916,6 +1919,9 @@ packages:
 
   oauth4webapi@3.3.1:
     resolution: {integrity: sha512-ZwX7UqYrP3Lr+Glhca3a1/nF2jqf7VVyJfhGuW5JtrfDUxt0u+IoBPzFjZ2dd7PJGkdM6CFPVVYzuDYKHv101A==}
+
+  oauth4webapi@3.8.4:
+    resolution: {integrity: sha512-EKlVEgav8zH31IXxvhCqjEgQws6S9QmnmJyLXmeV5REf59g7VmqRVa5l/rhGWtUqGm2rLVTNwukn9hla5kJ2WQ==}
 
   object-assign@4.1.1:
     resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
@@ -2496,14 +2502,6 @@ snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
 
-  '@auth/core@0.38.0':
-    dependencies:
-      '@panva/hkdf': 1.2.1
-      jose: 6.0.10
-      oauth4webapi: 3.3.1
-      preact: 10.24.3
-      preact-render-to-string: 6.5.11(preact@10.24.3)
-
   '@auth/core@0.41.0':
     dependencies:
       '@panva/hkdf': 1.2.1
@@ -2512,9 +2510,17 @@ snapshots:
       preact: 10.24.3
       preact-render-to-string: 6.5.11(preact@10.24.3)
 
-  '@auth/prisma-adapter@2.8.0(@prisma/client@5.22.0(prisma@5.22.0))':
+  '@auth/core@0.41.1':
     dependencies:
-      '@auth/core': 0.38.0
+      '@panva/hkdf': 1.2.1
+      jose: 6.1.3
+      oauth4webapi: 3.8.4
+      preact: 10.24.3
+      preact-render-to-string: 6.5.11(preact@10.24.3)
+
+  '@auth/prisma-adapter@2.11.1(@prisma/client@5.22.0(prisma@5.22.0))':
+    dependencies:
+      '@auth/core': 0.41.1
       '@prisma/client': 5.22.0(prisma@5.22.0)
     transitivePeerDependencies:
       - '@simplewebauthn/browser'
@@ -4239,6 +4245,8 @@ snapshots:
 
   jose@6.0.10: {}
 
+  jose@6.1.3: {}
+
   js-tokens@4.0.0: {}
 
   js-yaml@4.1.0:
@@ -4374,6 +4382,8 @@ snapshots:
   normalize-path@3.0.0: {}
 
   oauth4webapi@3.3.1: {}
+
+  oauth4webapi@3.8.4: {}
 
   object-assign@4.1.1: {}
 
