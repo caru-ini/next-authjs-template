@@ -6,9 +6,9 @@
   ],
   "packageRules": [
     {
-      "description": "Disable automerge for major updates",
+      "description": "Disable major updates",
       "matchUpdateTypes": ["major"],
-      "automerge": false
+      "enabled": false
     },
     {
       "description": "Automerge minor and patch updates",
