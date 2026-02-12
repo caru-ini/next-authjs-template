@@ -25,7 +25,7 @@ importers:
         version: 1.2.4(@types/react@18.3.28)(react@19.2.4)
       '@t3-oss/env-nextjs':
         specifier: ^0.12.0
-        version: 0.12.0(typescript@5.9.3)(zod@3.24.2)
+        version: 0.12.0(typescript@5.9.3)(zod@3.25.76)
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -61,7 +61,7 @@ importers:
         version: 5.9.3
       zod:
         specifier: ^3.24.2
-        version: 3.24.2
+        version: 3.25.76
     devDependencies:
       '@types/node':
         specifier: ^20.17.24
@@ -2465,9 +2465,6 @@ packages:
     peerDependencies:
       zod: ^3.25.0 || ^4.0.0
 
-  zod@3.24.2:
-    resolution: {integrity: sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ==}
-
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
@@ -3156,17 +3153,17 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@t3-oss/env-core@0.12.0(typescript@5.9.3)(zod@3.24.2)':
+  '@t3-oss/env-core@0.12.0(typescript@5.9.3)(zod@3.25.76)':
     optionalDependencies:
       typescript: 5.9.3
-      zod: 3.24.2
+      zod: 3.25.76
 
-  '@t3-oss/env-nextjs@0.12.0(typescript@5.9.3)(zod@3.24.2)':
+  '@t3-oss/env-nextjs@0.12.0(typescript@5.9.3)(zod@3.25.76)':
     dependencies:
-      '@t3-oss/env-core': 0.12.0(typescript@5.9.3)(zod@3.24.2)
+      '@t3-oss/env-core': 0.12.0(typescript@5.9.3)(zod@3.25.76)
     optionalDependencies:
       typescript: 5.9.3
-      zod: 3.24.2
+      zod: 3.25.76
 
   '@types/estree@1.0.8': {}
 
@@ -5016,7 +5013,5 @@ snapshots:
   zod-validation-error@4.0.2(zod@3.25.76):
     dependencies:
       zod: 3.25.76
-
-  zod@3.24.2: {}
 
   zod@3.25.76: {}
