@@ -25,7 +25,7 @@ importers:
         version: 1.5.0(@types/react@18.3.31)(react@19.3.1)
       '@t3-oss/env-nextjs':
         specifier: ^0.13.0
-        version: 0.13.11(typescript@5.9.3)(zod@3.25.76)
+        version: 0.13.11(typescript@5.9.3)(zod@4.6.7)
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -60,8 +60,8 @@ importers:
         specifier: ^5.9.3
         version: 5.9.3
       zod:
-        specifier: ^3.24.2
-        version: 3.25.76
+        specifier: ^4.0.0
+        version: 4.6.7
     devDependencies:
       '@types/node':
         specifier: ^20.17.24
@@ -2512,8 +2512,8 @@ packages:
     peerDependencies:
       zod: ^3.25.0 || ^4.0.0
 
-  zod@3.25.76:
-    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
+  zod@4.6.7:
+    resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
 
 snapshots:
 
@@ -3189,17 +3189,17 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@t3-oss/env-core@0.13.11(typescript@5.9.3)(zod@3.25.76)':
+  '@t3-oss/env-core@0.13.11(typescript@5.9.3)(zod@4.6.7)':
     optionalDependencies:
       typescript: 5.9.3
-      zod: 3.25.76
+      zod: 4.6.7
 
-  '@t3-oss/env-nextjs@0.13.11(typescript@5.9.3)(zod@3.25.76)':
+  '@t3-oss/env-nextjs@0.13.11(typescript@5.9.3)(zod@4.6.7)':
     dependencies:
-      '@t3-oss/env-core': 0.13.11(typescript@5.9.3)(zod@3.25.76)
+      '@t3-oss/env-core': 0.13.11(typescript@5.9.3)(zod@4.6.7)
     optionalDependencies:
       typescript: 5.9.3
-      zod: 3.25.76
+      zod: 4.6.7
 
   '@types/estree@1.0.9': {}
 
@@ -3842,8 +3842,8 @@ snapshots:
       '@babel/parser': 7.29.0
       eslint: 9.39.5(jiti@1.21.7)
       hermes-parser: 0.25.1
-      zod: 3.25.76
-      zod-validation-error: 4.0.2(zod@3.25.76)
+      zod: 4.6.7
+      zod-validation-error: 4.0.2(zod@4.6.7)
     transitivePeerDependencies:
       - supports-color
 
@@ -5107,8 +5107,8 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod-validation-error@4.0.2(zod@3.25.76):
+  zod-validation-error@4.0.2(zod@4.6.7):
     dependencies:
-      zod: 3.25.76
+      zod: 4.6.7
 
-  zod@3.25.76: {}
+  zod@4.6.7: {}
